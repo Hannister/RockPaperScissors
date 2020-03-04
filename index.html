@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Rock Paper Scissors - The Game!</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="game">
-        <div class="score">
-            <div class="player-score">
-                <h2>Player</h2>
-                <p>0</p>
-            </div>
-            <div class="computer-score">
-                <h2>Computer</h2>
-                <p>0</p>
-            </div>
+      <div class="score">
+        <div class="player-score">
+          <h2>Player</h2>
+          <p>0</p>
         </div>
+        <div class="computer-score">
+          <h2>Computer</h2>
+          <p>0</p>
+        </div>
+      </div>
 
-        <div class="intro">
-            <h1>Rock Paper and Scissors</h1>
-            <h2>The Game</h2>
-            <button>Let's Play</button>
+      <div class="intro">
+        <h1>Rock Paper and Scissors</h1>
+        <h2>The Game</h2>
+        <button>Let's Play</button>
+      </div>
+      <div class="match fadeOut">
+        <h2 class="winner">Choose an option</h2>
+        <div class="hands">
+          <img class="player-hand" src="./img/rock.png" alt="" />
+          <img class="computer-hand" src="./img/rock.png" alt="" />
         </div>
-        <div class="match fadeOut">
-            <h2 class="winner">Choose an option</h2>
-            <div class="hands">
-                <img class="player-hand" src="./img/rock.png" alt="">
-                <img class="computer-hand" src="./img/rock.png" alt="">
-            </div>
-            <div class="option">
-                <button class="rock">rock</button>
-                <button class="paper">paper</button>
-                <button class="scissors">scissors</button>
-            </div>
+        <div class="option">
+          <button class="rock">rock</button>
+          <button class="paper">paper</button>
+          <button class="scissors">scissors</button>
         </div>
+        <div class="end-game fadeOut">
+          <button class="end">End Game</button>
+        </div>
+      </div>
+
+      <div class="game-over fadeOut">
+        <h1 class="theWinner">YOU WIN!</h1>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          class="animetion"
+          src="https://assets5.lottiefiles.com/datafiles/VtCIGqDsiVwFPNM/data.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        >
+        </lottie-player>
+
+        <button class="newGame">New Game</button>
+      </div>
     </section>
 
-
     <script src="./app.js"></script>
-</body>
-
+  </body>
 </html>
